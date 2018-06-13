@@ -90,26 +90,26 @@ header h1 {
 .team {
     text-align: center;
     margin: 10em 0 3em 0;
-    padding: 0 10%;
-    background-image:url(images/background_team.png)
+    padding: 0 5%;
+    background-image:url(images/background_team.png);
     background-repeat: no-repeat; 
     background-position: center;
 } 
 .team h1 {
     width: 50%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 30px auto;
 }
 .members {
     
-    display: inline-block;
+    display: flex;
     justify-content: center;
 }
 .person {
-    margin: 0 20px;
+    margin: 0 70px;
     color: #202427;
 }
 .person h3 {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
    
 }
 

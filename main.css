@@ -179,16 +179,17 @@ width:auto;
     background-image: url(Assets/Bild2-aboutus.png);
     background-repeat: no-repeat;
     background-position: left center;
-    height: 80%;
-    width: auto;
+    height: 900px;
     margin-left: -4%;
+    margin-top: -300px;
 }
 
 .about h1 {
     margin-bottom: 30px;
-    padding-top: 300px;
+    padding-top: 500px;
     margin-left: 700px;
     margin-right: 50px;
+    
 }
 
 /*-----Call to action-----*/

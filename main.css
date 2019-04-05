@@ -24,38 +24,35 @@ p {
 /*-------- MAIN.GLOBAL ---------*/
 
 /*-------- DESKTOP START -------*/
+body {
+    position: relative;
 
-
-@media only screen and (max-width: 700px) {
-  body {
-    background-color: lightblue;
-  }
 }
 
+body::after {
+    content: '';
+    position: absolute;
+    top: -700px;
+    right: -850px;
+    height: 130%;
+    width: 100%;
+    background-image: url(Assets/Bild1-header.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    z-index: -100;
 
+}
 
+#firsttxt {
+    text-align: left;
+    margin-right: 1250px;
+    margin-left: 70px;
+}
 
-
-
-
-
-
-
-/*-------- MOBILE START ---------*/
-
-/*-------- BUTTONS START ---------*/
-
-.btnOutline {
-    display: block;
-    text-decoration: none;
-    color: #2B9DFF;
-    border: 2px solid #2B9DFF;
-    border-radius: 6px;
-    width: 175px;
-    height: 53px;
-    line-height: 53px;
-    text-align: center;
-    margin-left: 30%;
+#secondtxt {
+    display: flex;
+    align-items: center;
+    margin: 80px 340px 0 340px;
 }
 
 .btnFilled {
@@ -68,23 +65,36 @@ p {
     height: 53px;
     line-height: 53px;
     text-align: center;
-    margin-left: 30%;
+    position: static;
+    align-content: center;
+    margin: auto;
 }
 
-/*-------- BUTTONS END --------*/
+.btnOutline {
+    display: block;
+    text-decoration: none;
+    color: #2B9DFF;
+    border: 2px solid #2B9DFF;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 10px;
+}
 
 /*----- NAV START -----*/
 
 nav {
-    line-height: 250px;
-    text-align: left;
+    margin: 100px 40px 30px 60px;
 }
 
 /*--- nav logo ---*/
 
-#logo{
+.logo {
     height: auto;
-    width: 50px;
+    width: 580px;
 }
 
 nav a {
@@ -92,75 +102,137 @@ nav a {
     color: #202427;
     font-size: 25px;
     font-weight: 700;
-    margin-left: 10px;
-    margin-top: -30px;
+    margin: 0 10px;
 }
 
-nav a span {
+nav .kontakt {
     background-color: #2B9DFF;
     padding: 5px 15px;
     border-radius: 10px;
     font-weight: 100;
     color: white;
 }
+
 /*-------- NAV END ---------*/
-/*----- THE TRINITY START ------*/
-
-.columntyra h3{
-    margin-left: 30px;    
+.about::after {
+    content: '';
+    position: absolute;
+    top: 900px;
+    right: 100px;
+    height: 50%;
+    width: 100%;
+    background-image: url(Assets/Bild2-aboutus.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    z-index: -100;
 }
 
-.row p{
-margin-left:50px;
-}
 
-.columnmartin p{
-margin-left:35%;
-}
 
-.columnmartin h3{
-margin-top: -70px;
-margin-left: 30%;
-}
+/*-------- MOBILE START ---------*/
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: aliceblue;
+    }
 
-.columnmartin img{
-height:170px;
-width:auto;
-margin: 30%;
-margin-top: 60px;
-}
+    .about::after {
+        left: -300px;
+    }
 
-.columnstoffe p{
-margin-left:30%;
-}
+    .btnOutline {
+        display: block;
+        text-decoration: none;
+        color: #2B9DFF;
+        border: 2px solid #2B9DFF;
+        border-radius: 6px;
+        width: 175px;
+        height: 53px;
+        line-height: 53px;
+        text-align: center;
+        position: static;
+        align-content: center;
+        margin: auto;
+    }
 
-.columnstoffe h3{
-margin-top: -70px;
-margin-left: 30%;
-}
+    .btnFilled {
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: #2B9DFF;
+        border-radius: 6px;
+        width: 175px;
+        height: 53px;
+        line-height: 53px;
+        text-align: center;
+        position: static;
+        align-content: center;
+        margin: auto;
+    }
 
-.columnstoffe img {
-height:170px;
-width:auto;
-margin: 30%;
-margin-top: 10px;
-}
+    /*----- NAV START -----*/
 
-.columntyra p{
-margin-left:30%;
-}
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+    }
 
-.columntyra h3{
-margin-top: -70px;
-margin-left: 30%;
-}
+    /*--- nav logo ---*/
 
-.columntyra img {
-height:170px;
-width:auto;
-margin: 30%;
-margin-top:10px;
-}
+    .logo {
+        height: auto;
+        width: 380px;
+    }
 
-/*------- THE TRINITY END -------*/
-/*------- mobile -------*/
+    nav a {
+        text-decoration: none;
+        color: #202427;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+
+    nav .kontakt {
+        background-color: #2B9DFF;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-weight: 100;
+        color: white;
+    }
+
+    /*-------- NAV END ---------*/
+
+    #firsttxt {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #secondtxt {
+        display: flex;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .columnmartin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .columnstoffe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columntyra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*------- mobile -------*/
+}

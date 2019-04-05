@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="utf-8">
-<title>Form</title>
-
+<title>bildalbum</title>
+<!meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset=utf-8>
 <style type="text/css">
 
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
 .logo{
+margin-left: 1px;
 height: auto;
 width: 50px;
 margin-top: -15px;
@@ -48,36 +57,48 @@ margin-left: -8px;
     color: black;
 }
 
+
+
 /* Main content */
 .main {
-    margin-top: 20px; /* Add a top margin to avoid content overlay */
-
+    margin-top: 70px; /* Add a top margin to avoid content overlay */
 }
-.active {
-    background-color: #4CAF50;
-    color: white;
+
+
+
+div {
+    text-align: justify;
+}
+
+div img {
+    display: inline-block;
+    width: 10%;
+    height: 20%;
+    margin-top:100px;
+    margin-left:17%;
+}
+
+
+h1{
+margin-top: 400px;
+font-family: 'Raleway', sans-serif;
 }
 
 
 </style>
+
 </head>
 <body>
 
-<div class="navbar">
-  <a class="active" href="form.html">Dataformulär
-  <a href="contact.html">Kontakt</a>
-  <a href="blogg.html">Bloggar</a>
-  <a href="medlemmar.html">Medlemmar</a>
-  <a href="index.html">Hem</a>
-<p class="logotext"> <img class="logo" src="/webpics1/Logotransperant.png" align="left">Vasby Senior</p>
-</div>
-
 
 <div class="main">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2TNLxR93YAypqdMGyyB0ODyV21bDWPjx3W5u6Fz7YpFGOOg/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Läser in...</iframe>
+<div>
+<a href="jamtlandsblogg.html"><img class="jamtland" src="/images/webpics1/Jamtland.png"></a>
+<a href="varlagerblogg1.html"><img class="varlager" src="/images/webpics1/Varlager.png"></a>
+<a href="sommarlagerblogg.html"><img class="sommarlager" src="/images/webpics1/Sommarlager.png"></a>
 </div>
-
-
+<h1 style="text-align:center;">klicka på det äventyr du vill besöka</h1>
+</div>
 
 
 </body>
